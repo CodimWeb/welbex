@@ -1,58 +1,29 @@
-<p align="center"><a href="http://vhost281471.ispsite.ru/" target="_blank">Demo</a></p>
+## Демо проекта
+<a href="http://vhost281471.ispsite.ru/" target="_blank">Demo</a>
 
 
 ## Развертывание проекта
-composer install
-npm install
-создать базу данных в файле .env заполнить поля
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+<p>composer install</p>
+<p>npm install</p>
+<p>создать базу данных в файле .env заполнить поля</p>
+<p>DB_DATABASE=</p>
+<p>DB_USERNAME=</p>
+<p>DB_PASSWORD=</p>
 
-php artisan migrate
-php artisan storage:link
+<p>php artisan migrate</p>
+<p>php artisan storage:link</p>
 
 
-## Learning Laravel
+## Инструкция к апи
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<p>POST /api/auth/registration - регистрация пользователя <span color="red">параметры</span> login: string, email: string, password: string, passwordConfirm: string<p/>
+<p>POST /api/auth/login - авторизация пользователя <span color="red">параметры</span> login: string, password: string<p/>
+<p>POST /api/auth/refresh - получение нового access токена<p/>
+<p>POST /api/auth/logout - разавторизация пользователя<p/>
+<p>GET /api/me - получение данных пользователя<p/>
+<p>GET /posts - получение всех постов<p/>
+<p>GET /post/{id} - получение одного поста<p/>
+<p>POST /post - создание поста параметры <br/>media: file - картинка или видео,<br/>mediaType: string - "image"|"video" - тип файла,<br/>title: string - заголовок,<br/>text: string - описание<p/>
+<p>POST /post/update - обновление поста параметры <br/>media: file|string - если было изменено картинка или видео, если нет пустая строка,<br/>mediaType: string:"image"|"video" - тип файла аналогично картинке,<br/>title: string - заголовок,<br/>text: string - описание<p/>
+<p>DELETE /post/{id} - удаление поста<p/>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
