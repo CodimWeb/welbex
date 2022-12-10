@@ -1,5 +1,5 @@
 import {useState, useRef} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthGuard from "../hoc/AuthGuard";
 import Header from "../components/Header";
 import api from "../api";
@@ -9,6 +9,8 @@ const AddPost = () => {
     const inputFile = useRef(null);
     const inputTitle = useRef(null);
     const textarea = useRef(null)
+
+    const navigate = useNavigate();
 
     const getMediaType = (input) => {
         let type = input.files[0].type.split('/')[0];
@@ -26,6 +28,7 @@ const AddPost = () => {
         console.log(getMediaType(inputFile.current))
         api.post('/api/post', data).then((res) => {
             console.log(res)
+            navigate('/');
         }).catch(error => {
            console.log(error)
         })
