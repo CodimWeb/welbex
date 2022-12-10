@@ -25,5 +25,5 @@
 <p>GET /post/{id} - получение одного поста<p/>
 <p>POST /post - создание поста параметры <br/>media: file - картинка или видео,<br/>mediaType: string - "image"|"video" - тип файла,<br/>title: string - заголовок,<br/>text: string - описание<p/>
 <p>POST /post/update - обновление поста параметры <br/>media: file|string - если было изменено картинка или видео, если нет пустая строка,<br/>mediaType: string:"image"|"video" - тип файла аналогично картинке,<br/>title: string - заголовок,<br/>text: string - описание<p/>
-<p>DELETE /post/{id} - получение одного поста<p/>
+<p>DELETE /post/{id} - удаление поста<p/>
 
