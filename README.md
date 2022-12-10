@@ -23,4 +23,7 @@
 <p>GET /api/me - получение данных пользователя<p/>
 <p>GET /posts - получение всех постов<p/>
 <p>GET /post/{id} - получение одного поста<p/>
-<p>POST /post - создание поста параметры media:file - картинка или видео,<br/>mediaType:string:"image":"video" - тип файла,<br/>title:string - заголовок,<br/>text:string - описание<p/>
+<p>POST /post - создание поста параметры <br/>media:file - картинка или видео,<br/>mediaType:string:"image":"video" - тип файла,<br/>title:string - заголовок,<br/>text:string - описание<p/>
+<p>POST /post/update - обновление поста параметры <br/>media:file:string - картинка или видео если было изменено, если нет пустая строка,<br/>mediaType:string:"image":"video" - тип файла аналогично картинке,<br/>title:string - заголовок,<br/>text:string - описание<p/>
+<p>DELETE /post/{id} - получение одного поста<p/>
+
