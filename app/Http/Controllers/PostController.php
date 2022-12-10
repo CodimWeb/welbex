@@ -24,8 +24,6 @@ class PostController extends Controller
     }
 
     public function getAll() {
-        $posts = Post::with('user')->get();
-
         return response()->json([
             'posts' => Post::with('user')->get(),
         ]);
