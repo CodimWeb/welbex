@@ -1,16 +1,17 @@
-<p align="center"><a href="http://vhost281471.ispsite.ru/" target="_blank">Demo</a></p>
+## Демо проекта
+<a href="http://vhost281471.ispsite.ru/" target="_blank">Demo</a>
 
 
 ## Развертывание проекта
-composer install
-npm install
-создать базу данных в файле .env заполнить поля
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+<p>composer install</p>
+<p>npm install</p>
+<p>создать базу данных в файле .env заполнить поля</p>
+<p>DB_DATABASE=</p>
+<p>DB_USERNAME=</p>
+<p>DB_PASSWORD=</p>
 
-php artisan migrate
-php artisan storage:link
+<p>php artisan migrate</p>
+<p>php artisan storage:link</p>
 
 
 ## Learning Laravel
